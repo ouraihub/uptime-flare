@@ -83,7 +83,7 @@ export default function Home({
           </a>
           , modified with ❤ by{' '}
           <a href="https://github.com/ouraihub" target="_blank">
-            amclubs
+            ❤️ouraihub
           </a>
           .
         </Text>
