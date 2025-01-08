@@ -74,15 +74,15 @@ export default function Home({
           textAlign: 'center'
         }}>
           Open-source monitoring and status page powered by{' '}
-          <a href="https://github.com/amclubs/am-uptime-flare" target="_blank">
+          <a href="https://github.com/ouraihub/uptime-flare" target="_blank">
             UptimeFlare
           </a>{' '}
           and{' '}
           <a href="https://www.cloudflare.com/" target="_blank">
             Cloudflare
           </a>
-          , made with ❤ by{' '}
-          <a href="https://github.com/amclubs" target="_blank">
+          , modified with ❤ by{' '}
+          <a href="https://github.com/ouraihub" target="_blank">
             amclubs
           </a>
           .

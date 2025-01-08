@@ -1,12 +1,12 @@
 const pageConfig = {
   // Title for your status page
-  title: "AM科技's Status Page",
+  title: "OurAIHub's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://am.809098.xyz', label: '个人博客', highlight: true },
-    { link: 'https://youtube.com/@AM_CLUB', label: 'AM科技' },
-    { link: 'https://github.com/amclubs', label: 'GitHub' },
-    { link: 'https://809098.xyz', label: 'Blog'},
+    { link: 'https://blog.ouraihub.com', label: '个人博客', highlight: true },
+    { link: 'https://youtube.com/@ouraihub', label: 'OurAIHub' },
+    { link: 'https://github.com/ouraihub', label: 'GitHub' },
+    { link: 'https://affnav.github.io', label: 'nav'},
   ],
 }
 
@@ -20,17 +20,17 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'am.809098.xyz',
+      id: 'blog.ouraihub.com',
       // `name` is used at status page and callback message
       name: '个人博客',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
-      target: 'https://am.809098.xyz',
+      target: 'https://blog.ouraihub.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://am.809098.xyz',
+      statusPageLink: 'https://blog.ouraihub.com',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       // expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
@@ -50,14 +50,36 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: '809098.xyz',
-      name: 'Blog',
+      id: 'nav.ouraihub.com',
+      name: '导航',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://809098.xyz',
+      target: 'https://nav.ouraihub.com',
       tooltip: 'My production server monitor',
-      statusPageLink: 'https://809098.xyz',
+      statusPageLink: 'https://nav.ouraihub.com',
+      timeout: 10000,
+    },
+    {
+      id: 'image.ouraihub.com',
+      name: '相册',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://image.ouraihub.com',
+      tooltip: 'My production server monitor',
+      statusPageLink: 'https://image.ouraihub.com',
+      timeout: 10000,
+    },
+    {
+      id: 'ouraihub.com',
+      name: '网站',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://ouraihub.com',
+      tooltip: 'My production server monitor',
+      statusPageLink: 'https://ouraihub.com',
       timeout: 10000,
     },
   ],

@@ -21,7 +21,7 @@ export default function Header() {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         <div>
-          <a href="https://www.youtube.com/@AM_CLUB" target="_blank">
+          <a href="https://github.com/ouraihub/uptime-flare" target="_blank">
             <Text size="xl" span>
               🕒
             </Text>
